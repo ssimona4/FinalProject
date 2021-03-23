@@ -1,0 +1,435 @@
+{
+    "torturi": [
+        {
+            "id": 1,
+            "img": "./Poze/white_choco_cake.jpg",
+            "denumire": "White Chocolate Cake",
+            "descriere": "Blat dens de ciocolata, chantilly de ciocolata alba si vanilie, zmeura cruda, *topping de ciocolata optional",
+            "prices": [
+                {
+                    "label": "diam 15cm/1500gr/12 felii - 170ron ",
+                    "value": 170
+                },
+                {
+                    "label": "diam 18cm/1800gr/14 felii - 200ron ",
+                    "value": 200
+                },
+                {
+                    "label": "diam 21cm/2300gr/18 felii - 260ron ",
+                    "value": 260
+                },
+                {
+                    "label": "diam 26cm/3700gr/24 felii - 410ron ",
+                    "value": 410
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "img": "./Poze/choco_cake.jpg",
+            "denumire": "Chocolate Cake",
+            "descriere": "Blat dens de ciocolata, chantilly de ciocolata, zmeura sau visine, choco rocks,(topping de ciocolata optional)",
+            "prices": [
+                {
+                    "label": "diam 18cm/1600gr/12 felii - 180ron ",
+                    "value": 180
+                },
+                {
+                    "label": "diam 21cm/2300gr/18 felii - 260ron ",
+                    "value": 260
+                },
+                {
+                    "label": "diam 26cm/3700gr/24 felii - 410ron ",
+                    "value": 410
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "img": "./Poze/carrot_cake.jpg",
+            "denumire": "Carrot Cake",
+            "descriere": "Blat de morcovi, zahar brun si nuca, crema de branza Philadelphia, alune caramelizate Callebaut. Perle crocante de caramel sarat. Topping-ul de caramel vine separat intr-un borcanel, cantitatea variaza in functie de dimensiunea tortului.",
+            "prices": [
+                {
+                    "label": "diam 18cm/1600gr/12 felii - 190ron ",
+                    "value": 190
+                },
+                {
+                    "label": "diam 21cm/2300gr/15 felii - 235ron ",
+                    "value": 235
+                },
+                {
+                    "label": "diam 26cm/2900gr/22 felii - 335ron ",
+                    "value": 335
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "img": "./Poze/mousse_zmeura.jpg",
+            "denumire": "Mousse de Zmeura",
+            "descriere": "Blat de brownie, mousse de zmeura, bucati de zmeura cruda, glazura oglinda, brau de ciocolata.",
+            "prices": [
+                {
+                    "label": "diam 18cm/1900gr/14 felii - 210ron ",
+                    "value": 210
+                },
+                {
+                    "label": "diam 21cm/2500gr/20 felii - 275ron ",
+                    "value": 275
+                },
+                {
+                    "label": "diam 26cm/3400gr/24 felii - 375ron ",
+                    "value": 375
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "img": "./Poze/mousse_ciocolata_neagra.jpg",
+            "denumire": "Mousse de Ciocolata Neagra",
+            "descriere": "Blat de brownie, mousse de ciocolata neagra, mousse de ciocolata cu lapte,glazura oglinda, brau de ciocolata.",
+            "prices": [
+                {
+                    "label": "diam 18cm/1900gr/14 felii - 210ron ",
+                    "value": 210
+                },
+                {
+                    "label": "diam 21cm/2500gr/20 felii - 275ron ",
+                    "value": 275
+                },
+                {
+                    "label": "diam 26cm/3400gr/24 felii - 375ron ",
+                    "value": 375
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "img": "./Poze/mousse_ciocolata_alba.jpg",
+            "denumire": "Mousse de Ciocolata Alba",
+            "descriere": "Blat de brownie, mousse de ciocolata alba, glazura oglinda, brau de ciocolata.",
+            "prices": [
+                {
+                    "label": "diam 18cm/1900gr/14 felii - 210ron ",
+                    "value": 210
+                },
+                {
+                    "label": "diam 21cm/2500gr/20 felii - 275ron ",
+                    "value": 275
+                },
+                {
+                    "label": "diam 26cm/3400gr/24 felii - 375ron ",
+                    "value": 375
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "img": "./Poze/kinder_felie.jpg",
+            "denumire": "Kinder Felie de Lapte",
+            "descriere": "Blat pufos de ciocolata, crema de lapte, mascarpone, lapte condensat si miere. Tortul este acoperit cu glazura de ciocolata alba sau neagra si brau de ciocolata.",
+            "prices": [
+                {
+                    "label": "diam 15cm/1600gr/12 felii - 180ron ",
+                    "value": 180
+                },
+                {
+                    "label": "diam 18cm/2000gr/16 felii - 220ron ",
+                    "value": 220
+                },
+                {
+                    "label": "diam 21cm/2500gr/20 felii - 280ron ",
+                    "value": 280
+                },
+                {
+                    "label": "diam 26cm/3600gr/26 felii - 400ron ",
+                    "value": 400
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "img": "./Poze/ferreo_rocher.jpg",
+            "denumire": "Fererro Rocher",
+            "descriere": "Blat de brownie, crema de ciocolata si alune,strat de bezea, alune caramelizate, glazura de ciocolata.",
+            "prices": [
+                {
+                    "label": "diam 15cm/1800gr/14 felii - 225ron ",
+                    "value": 225
+                },
+                {
+                    "label": "diam 18cm/2200gr/18 felii - 270ron ",
+                    "value": 270
+                },
+                {
+                    "label": "diam 21cm/3000gr/22 felii - 360ron ",
+                    "value": 360
+                },
+                {
+                    "label": "diam 26cm/4600gr/28 felii - 550ron ",
+                    "value": 550
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "img": "./Poze/opera_cake.jpg",
+            "denumire": "Opera Cake",
+            "descriere": "Blat cu faina de migdale insiropat cu cafea, ganache de ciocolata, buttercream de cafea si o baza crocanta de croustillant (ciocolata neagra si paillete feuilletine)",
+            "prices": [
+                {
+                    "label": "diam 18cm/1900gr/12 felii - 230ron ",
+                    "value": 230
+                },
+                {
+                    "label": "diam 21cm/2500gr/20 felii - 300ron ",
+                    "value": 300
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "img": "./Poze/baked_cheesecake.jpg",
+            "denumire": "Baked Cheesecake",
+            "descriere": "Blat de oreo, biscuiti digestivi sau integrali, crema pufoasa din branza philadelphia si frisca, topping de ganache de ciocolata, ornat cu fructe proaspete, macarons, perle de ciocolata, perle de caramel, bucati de ciocolata, praline, trufe de ciocolata etc.",
+            "prices": [
+                {
+                    "label": "diam 18cm/2000gr/15 felii - 220ron ",
+                    "value": 220
+                },
+                {
+                    "label": "diam 21cm/2500gr/18 felii - 275ron ",
+                    "value": 275
+                },
+                {
+                    "label": "diam 26cm/3500gr/24 felii - 385ron ",
+                    "value": 385
+                }
+            ]
+        },
+        {
+            "id": 11,
+            "img": "./Poze/medovik.jpg",
+            "denumire": "Medovik",
+            "descriere": "Tort rusesc, cu foi de miere delicate si subtiri, umplute cu crema fina de smantana acra, gem de caise si alune caramelizate.",
+            "prices": [
+                {
+                    "label": "diam 18cm/1600gr/12 felii - 190ron ",
+                    "value": 190
+                },
+                {
+                    "label": "diam 21cm/1900gr/15 felii - 225ron ",
+                    "value": 225
+                },
+                {
+                    "label": "diam 26cm/2900gr/22 felii - 335ron ",
+                    "value": 335
+                }
+            ]
+        },
+        {
+            "id": 12,
+            "img": "./Poze/pavlova.jpg",
+            "denumire": "Pavlova",
+            "descriere": "Blat crocant de bezea, crema de frisca si mascarpone, fructe de padure, perle de ciocolata.",
+            "prices": [
+                {
+                    "label": "diam 21cm/1600gr/12 felii - 195ron ",
+                    "value": 195
+                },
+                {
+                    "label": "diam 26cm/2000gr/16 felii - 240ron ",
+                    "value": 240
+                }
+            ]
+        },
+        {
+            "id": 13,
+            "img": "./Poze/cifre.jpg",
+            "denumire": "Tarta cifra/litera",
+            "descriere": "Blat din faina de migdale si grau, chantilly de ciocolata alba/neagra si zmeura proaspete.",
+            "prices": [
+                {
+                    "label": "Dimensiune A4/1500gr/120ron/kg ",
+                    "value": 195
+                },
+                {
+                    "label": "Dimensiune A3/3000gr/120ron/kg ",
+                    "value": 240
+                }
+            ]
+        }
+    ],
+    "prajituri": [
+        {
+            "id": 14,
+            "img": "./Poze/mini_pavlova.jpg",
+            "denumire": "Mini Pavlova",
+            "descriere": "Invelis crocant de bezea, spuma de frisca si mascarpone, fructe de padure,alune caramelizate",
+            "prices": "110"
+        },
+        {
+            "id": 15,
+            "img": "./Poze/carrotcake_bites.jpg",
+            "denumire": "Carrot Cake Bites",
+            "descriere": "Mini briose cu blat de morcovi, insertie de caramel topping din crema de branza, biscuit crocant, perle de caramel, fulgi de ciocolata blonda.",
+            "prices": "110"
+        },
+        {
+            "id": 16,
+            "img": "./Poze/choux_vanilie.jpg",
+            "denumire": "Choux Vanilie",
+            "descriere": "Choux craquelin, crema diplomat cu vanilie, Chantilly de ciocolata alba",
+            "prices": "110"
+        },
+        {
+            "id": 17,
+            "img": "./Poze/choux_ciocolata.jpg",
+            "denumire": "Choux Ciocolata",
+            "descriere": "..............",
+            "prices": "110"
+        },
+        {
+            "id": 18,
+            "img": "./Poze/choux_citrice_malibu.jpg",
+            "denumire": "Choux cu Citrice si Malibu",
+            "descriere": "Choux craquelin, confit de citrice, cremeux de lamaie, Chantilly cu Malibu",
+            "prices": "110"
+        },
+        {
+            "id": 19,
+            "img": "./Poze/choux_paris_breast.jpg",
+            "denumire": "Paris Breast Choux",
+            "descriere": "Choux craquelin, crema Mousseline cu pasta de praline",
+            "prices": "110"
+        },
+        {
+            "id": 20,
+            "img": "./Poze/choux_tiramisu.jpg",
+            "denumire": "Tiramisu Choux",
+            "descriere": "Choux craquelin, ganache de cafea, crema diplomat cu cafea, Chantilly cu mascarpone.",
+            "prices": "110"
+        },
+        {
+            "id": 21,
+            "img": "./Poze/mousse_pahar.jpg",
+            "denumire": "Mousseuri la pahar",
+            "descriere": "Oreo crunch, mousse de zmeura si ciocolata alba/ mousse de zmeura si ciocolata neagra/ mousse de doua ciocolate",
+            "prices": "110"
+        },
+        {
+            "id": 22,
+            "img": "./Poze/crinckles.jpg",
+            "denumire": "Biscuiti de ciocolata",
+            "descriere": "Biscuiti crocanti cu interior moale si bucati de ciocolata",
+            "prices": "110"
+        },
+        {
+            "id": 23,
+            "img": "./Poze/candy_pops.jpg",
+            "denumire": "Trufe de ciocolata neagra",
+            "descriere": "Trufe de ciocolata neagra cu rom",
+            "prices": "110"
+        },
+        {
+            "id": 24,
+            "img": "./Poze/tarta_lime_zmeura.jpg",
+            "denumire": "Tarte cu zmeura, lime si busuioc",
+            "descriere": "Pate sucree, insertie de jeleu de zmeura, crema de lime si busuioc, Chantilly de ciocolata alba, zmeura",
+            "prices": "110"
+        },
+        {
+            "id": 25,
+            "img": "./Poze/tarta_cafea.jpg",
+            "denumire": "Tarte cu cafea",
+            "descriere": "Pate sucree, biscuit insiropat in cafea, chantilly de cafea, ganache de cafea",
+            "prices": "110"
+        },
+        {
+            "id": 26,
+            "img": "./Poze/tarta_ciocolata.jpg",
+            "denumire": "Tarte cu ciocolata si caramel sarat",
+            "descriere": "Pate sucree cu cacao, insertie de caramel sarat, ganache de ciocolata neagra, Chantilly de ciocolata neagra",
+            "prices": "110"
+        },
+        {
+            "id": 27,
+            "img": "./Poze/tarta_vanilie.jpg",
+            "denumire": "Tarte cu vanilie si fructe",
+            "descriere": "Pate sucree, crème patissiere, insertie de jeleu de zmeura si décor cu fructe de padure",
+            "prices": "110"
+        },
+        {
+            "id": 28,
+            "img": "./Poze/tarta_ricotta.jpg",
+            "denumire": "Tarte cu ricotta si smochine",
+            "descriere": "Pate sucree, crema de ricotta, alune caramelizate, smochine, perle de caramel sarat",
+            "prices": "110"
+        },
+        {
+            "id": 29,
+            "img": "./Poze/tarta_mere.jpg",
+            "denumire": "Tarte cu mere",
+            "descriere": "Pate sucree, .........................",
+            "prices": "110"
+        },
+        {
+            "id": 30,
+            "img": "./Poze/millefeuille.jpg",
+            "denumire": "Mille-feuille",
+            "descriere": "Foietaj caramelizat, zmeura, crème patisserie, Chantilly de ciocolata alba",
+            "prices": "110"
+        },
+        {
+            "id": 31,
+            "img": "./Poze/cheesecake_bites.jpg",
+            "denumire": "Cheesecake Bites",
+            "descriere": "Blat din biscuiti digestivi, crema de branza Philadelphia, ganache de ciocolata, perle crocante de caramel",
+            "prices": "110"
+        },
+        {
+            "id": 32,
+            "img": "./Poze/mediants.jpg",
+            "denumire": "Mediants",
+            "descriere": ".............",
+            "prices": "110"
+        },
+
+        {
+            "id": 33,
+            "img": "./Poze/macarons_ciocolata.jpg",
+            "denumire": "Macarons Ciocolata",
+            "descriere": "................",
+            "prices": "3,5 ron/buc"
+        },
+        {
+            "id": 34,
+            "img": "./Poze/macarons_fistic.jpg",
+            "denumire": "Macarons Fistic",
+            "descriere": "................",
+            "prices": "3,5 ron/buc"
+        },
+        {
+            "id": 35,
+            "img": "./Poze/macarons_zmeura.jpg",
+            "denumire": "Macarons Zmeura",
+            "descriere": "................",
+            "prices": "3,5 ron/buc"
+        },
+        {
+            "id": 36,
+            "img": "./Poze/macarons_cafea.jpg",
+            "denumire": "Macarons Cafea",
+            "descriere": "................",
+            "prices": "3,5 ron/buc"
+        },
+        {
+            "id": 37,
+            "img": "./Poze/macarons_asortati.jpg",
+            "denumire": "Macarons Asortati",
+            "descriere": "................",
+            "prices": "3,5 ron/buc"
+        }
+    ]
+}

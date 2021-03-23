@@ -1,0 +1,126 @@
+ /* global style */
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ * {
+    box-sizing: border-box;
+ }
+ 
+.subtil {
+    color: darkgrey;
+}
+
+/* Navbar */
+ul.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 40%;
+}
+.navbar ul.navbar-nav li a.nav-link.active{
+    color:black;
+}
+
+/* Home Page */
+#output_torturi {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+#output_torturi h1 {
+    display: block;
+    width: 100%;
+}
+
+#output_prajituri {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#output_prajituri h1 {
+    display: block;
+    width: 100%;
+}
+
+.card {
+    text-align: center;
+    width: 30%;
+    height: 500px;
+    margin-bottom: 50px;
+}
+
+.card img {
+    padding-bottom:15px;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+
+/* Butoanele */
+.detailsBtn {
+    background-color: #dbe9b7;
+    color: black;
+    border: 1px solid #dbe9b7;
+    margin: 10px auto;
+    width: 50%;
+    display: block;
+}
+.cmdBtn {
+    background-color: #dbe9b7;
+    color: black;
+    border: 1px solid #dbe9b7;
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+}
+.btn:hover,.btn:focus {
+    border: 1px solid #b8b2a6;
+    background-color:#b8b2a6;
+}
+
+/* Details Page */
+.detailsCard {
+    width: 100%;
+    display: flex;
+    margin: 50px 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.detailsCard img.card-img-top{
+    width: 50%;
+}
+
+.detailsCard .contentDetails{
+    width: 50%;
+    padding: 40px;
+}
+p.addBanner {
+        background-color:#b8b2a6;
+        width: 50%;
+        color:white;
+        font-size:18px;
+        text-align: center;
+        padding: 3px;
+        border-radius: 5px;
+        margin: 30px auto;
+        
+}
+
+/* Cart Page */
+
+.totalCmd {
+    display: block;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}

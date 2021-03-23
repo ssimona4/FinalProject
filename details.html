@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+
+    <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light navbar-fixed-top" style="background-color:#f4dada;">
+        <a class="logo" href="./index.html">
+            <img src="./poze/logo.svg" alt="logo" width="100px" height="50px" />
+        </a>
+        <ul class="navbar-nav">
+            <li><a class="nav-item nav-link active" href="./index.html">Home</a></li>
+            <li><a class="nav-item nav-link" href="#">Torturi</a></li>
+            <li><a class="nav-item nav-link" href="#">Prajituri</a></li>
+            <li><a class="nav-item nav-link" href="./admin.html">Admin</a></li>
+            <li><a class="nav-item nav-link" href="#">Blog</a></li>
+            <li><a class="nav-item nav-link" href="#">Contact</a></li>
+            <li>
+                <a class="nav-item nav-link" href="./cart.html">
+                <span id="nrOfProducts"></span>
+                Cosul tau
+            </a>
+        </li>
+        </ul>
+        </div>
+    </nav>
+    <!-- Container -->
+    <div class="container" id="detailsContainer">
+        <div id="output_details"></div>
+    </div>
+    <script src="./src/details.js" type="module"></script>
+    <script src="src/app.js" type="module"></script>
+
+</body>
+
+</html>

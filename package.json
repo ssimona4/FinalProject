@@ -1,0 +1,36 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "Final Project | Macarons Boutique",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-db": "json-server --watch api/db.json",
+    "start": "serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssimona4/FinalProject.git"
+  },
+  "keywords": [
+    "Macarons",
+    "Boutique",
+    "|",
+    "meniu",
+    "|",
+    "torturi"
+  ],
+  "author": "Simona Cioara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ssimona4/FinalProject/issues"
+  },
+  "homepage": "https://github.com/ssimona4/FinalProject#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.0",
+    "json-server": "^0.16.3",
+    "serve": "^11.3.2"
+  },
+  "devDependencies": {}
+}
