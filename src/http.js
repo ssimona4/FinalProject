@@ -9,12 +9,22 @@ class customHTTPMethods {
             {
              method: 'POST',
              headers: {
-                 'Content-type' : 'application/json '
+                 'Content-type' : 'application/json'
                         },
              body: JSON.stringify(product)
              });
              const data = await response.json();
              return data;
-     }  
+    }
+    async delete(url) {
+        const response = await fetch(url, {
+          method: "DELETE",
+          headers: {
+            "Content-type": "application/json",
+          },
+        });
+        const data = await response.json();
+        return data;
+      }  
 }
 export const http = new customHTTPMethods();

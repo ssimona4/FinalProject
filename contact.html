@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <title>Contact</title>
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-light fixed-top" style="background-color:#f4dada;">
+     <!-- Navbar -->
+     <nav class="navbar navbar-light fixed-top" style="background-color:#f4dada;">
         <a class="logo" href="./index.html">
             <img src="./poze/logo.svg" alt="logo" width="100px" height="50px" />
         </a>
         <ul class="navbar-nav">
-            <li><a class="nav-item nav-link active" href="./index.html">Home</a></li>
+            <li><a class="nav-item nav-link" href="./index.html">Home</a></li>
             <li><a class="nav-item nav-link" href="./torturi.html">Torturi</a></li>
             <li><a class="nav-item nav-link" href="./prajituri.html">Prajituri</a></li>
-            <li><a class="nav-item nav-link" href="./contact.html">Contact</a></li>
+            <li><a class="nav-item nav-link active" href="./contact.html">Contact</a></li>
             <li>
                 <a class="nav-item nav-link" href="./cart.html">
                 <span id="nrOfProducts"></span>
@@ -34,9 +30,25 @@
         </ul>
         </div>
     </nav>
-    <!-- Container -->
-    <div class="container homePageBanner">
-        <button class="detailsBtn" id="home"><a href="/details?id=2&type=tort">Detalii</a></button>
+    <!-- container -->
+    <div class="container containerContact">
+        <div class="thankYou" id="banner">
+            <p>Multumim pentru interesul acordat!</p> <br> 
+        </div> 
+        <div class="textContact">
+            <p>Dacă îți dorești să faci o comandă de torturi, mărturii, candy bar sau orice altceva, îți așteptăm cu drag mesajul. Ne găsești și pe instagram, unde răspundem mesajelor private destul de repede - @macarons.boutique. Dacă vrei să ne auzim la telefon, sună-ne la 0747112237 sau scrie-ne pe whatsapp.</p>
+        </div>
+        <div class="formular">
+                <form class="category">
+                    <input type="text" class="input1" name="name" placeholder="First Name" required> <br><br>
+                    <input type="text" class= "input2" name="name" placeholder="Last Name" required> <br><br>
+                    <input type="email" class="input3" name="email" placeholder="e-mail"> <br><br>
+                    <textarea name="message" cols="30" rows="8" placeholder="Lasa-ne un feedback"></textarea> <br><br> 
+                    <div class="submitButton">
+                    <input type="button" value="Submit" class="btn btn-primary cmdBtn">
+                    </div>
+                </form>
+        </div>
     </div>
     <!-- Footer -->
     <footer>
@@ -50,8 +62,7 @@
             <small>copyright &copy;2021</small>
         </div>
     </footer>
-    <script src="src/index.js" type="module"></script>
+    <script src="src/contact.js" type="module"></script>
     <script src="src/app.js" type="module"></script>
 </body>
-
 </html>

@@ -1,13 +1,25 @@
  /* global style */
-body{
+body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
- }
+}
  * {
     box-sizing: border-box;
- }
- 
+}
 .subtil {
     color: darkgrey;
+}
+.container {
+    padding-top: 100px;
+    min-height: 87.5vH;
+}
+.homePageBanner {
+    background-size: cover;
+    background-image: url('./Poze/banner1.jpg');
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    max-width: unset;
+    background-position: center center;
 }
 
 /* Navbar */
@@ -22,6 +34,18 @@ ul.navbar-nav {
 }
 
 /* Home Page */
+#qoute {
+    font-family: 'Dancing Script', cursive;
+    color: rgb(32, 27, 27);
+    display: block;
+    margin: 0 20%;
+    padding: 30px 0;
+}   
+.title {
+    display: block;
+    margin: 0 50%;
+    padding-bottom: 10px ;
+}
 #output_torturi {
     display: flex;
     flex-direction: row;
@@ -30,12 +54,10 @@ ul.navbar-nav {
     height: 100%;
     flex-wrap: wrap;
 }
-
-#output_torturi h1 {
+#output_torturi h2 {
     display: block;
     width: 100%;
 }
-
 #output_prajituri {
     display: flex;
     flex-direction: row;
@@ -43,49 +65,64 @@ ul.navbar-nav {
     width: 100%;
     flex-wrap: wrap;
 }
-
-#output_prajituri h1 {
+#output_prajituri h2 {
     display: block;
     width: 100%;
 }
-
 .card {
     text-align: center;
     width: 30%;
     height: 500px;
     margin-bottom: 50px;
 }
-
 .card img {
     padding-bottom:15px;
+    height: 345px;
 }
-
 .card-title {
     font-size: 20px;
 }
 
-
 /* Butoanele */
 .detailsBtn {
-    background-color: #dbe9b7;
+    background-color: #f7d9d9;
     color: black;
-    border: 1px solid #dbe9b7;
+    border: 1px solid #f7d9d9;
     margin: 10px auto;
     width: 50%;
     display: block;
 }
 .cmdBtn {
-    background-color: #dbe9b7;
+    background-color: #f7d9d9;
     color: black;
-    border: 1px solid #dbe9b7;
+    border: 1px solid #f7d9d9;
     width: 50%;
-    margin: 10px auto;
+    margin: 30px auto;
     display: block;
 }
-.btn:hover,.btn:focus {
-    border: 1px solid #b8b2a6;
-    background-color:#b8b2a6;
+.delBtn {
+    background:#b8b2a6;
+    border-color: #b8b2a6;
 }
+.btn:hover,.btn:focus {
+    border: 1px solid #f5c0c0;
+    background-color:#f5c0c0;
+    color: black;
+}
+#home {
+    width: 15%;
+    height: 50px;
+    border-radius: 10px;
+    margin-top: 400px;
+    margin-left: 430px;
+}
+#home:hover {
+    background-color:#f5c0c0;
+}
+#home a {
+    color: black;
+}
+
 
 /* Details Page */
 .detailsCard {
@@ -95,32 +132,173 @@ ul.navbar-nav {
     flex-direction: row;
     flex-wrap: wrap;
 }
-
-.detailsCard img.card-img-top{
+.detailsCard img.card-img-top {
     width: 50%;
 }
-
-.detailsCard .contentDetails{
+.detailsCard .contentDetails {
     width: 50%;
     padding: 40px;
 }
 p.addBanner {
-        background-color:#b8b2a6;
+        background-color:#dbe9b7;
         width: 50%;
-        color:white;
+        color:black;
         font-size:18px;
         text-align: center;
         padding: 3px;
         border-radius: 5px;
-        margin: 30px auto;
-        
+        margin: 30px auto;        
 }
 
 /* Cart Page */
-
 .totalCmd {
-    display: block;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+    margin-left: 50%;
+}
+.totalCmd p {
+    font-weight: bold;
+    margin-right:15px;
+}
+.plaseazaBtn {
+    background-color: #f7d9d9;
+    color: black;
+    border: 1px solid #f7d9d9;
+    width: 35%;
+}
+
+/* Contact Page */
+.formular {
+    margin: 10px 20px;
+    height: 700px;
+    width: 700px;
     display: flex;
-    justify-content: flex-end;
+}
+.category {
+    margin: 50px 50px;
+}
+.submitButton {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.thankYou {
+    margin: 20px 20px 20px 60px;
+    background-color: #dbe9b7;
+    display: flex;
+    flex-direction: row;
+    width: 350px;
+    color:black;
+    text-align: center;
+    justify-content: center;
+}
+.i {
+    color: indigo;
+    height: 20px;
+}
+#total {
+    display: inline;
+}
+.textContact {
+    margin-left: 70px;
+}
+
+/* Admin Page */
+.overTable{
+    display: flex;
+}
+.imgtable {
+    display: flex;
+    width: 60px;
+    height: 60px;
+    margin-right: 50px;
+}
+.preturi {
+    display: flex;
+    margin-bottom: 5px;
+}
+.tableAdmin {
     width: 100%;
+    margin: 0 auto;
+}
+.overTable {
+    padding: 20px 0;
+}
+.delBtn {
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+.tableAdmin tbody tr {
+    padding-bottom: 3px;
+    border-bottom: 1px solid darkgrey;
+}
+
+/* Login Page */
+.login-box {
+    display: flex;
+    justify-content: center;
+    margin:100px auto 0 auto;
+    width: 800px;
+    padding: 40px;
+    background: #c8c5bd;
+    opacity: 0.7;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+}
+.cont {
+    margin-left: 25px;
+}
+  
+/* Produs Nou */
+.produsNou {
+    display: block;
+    flex-direction: column;
+    padding-top: 0px;
+    width: 26%;
+    margin: 0 auto;
+}
+.produsNou input {
+    width: 300px;
+}
+.produsNou select  {
+    width: 300px;
+    margin: 10px 0;
+}
+#addNewProd h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+  /* footer */
+footer{
+    background:#dddddd;
+    width: 100%;
+    padding: 10px 0;
+    color: black;
+} 
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.socials {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-inline-start: 0px;
+}
+.socials li{
+    margin:0 20px;
+}
+.socials a i{
+    color: #999999;
+    font-size: 25px;
+}
+.socials a:hover i{
+    color:black;
 }

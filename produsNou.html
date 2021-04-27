@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>ProdusNou</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-light fixed-top" style="background-color:#f4dada;">
@@ -21,9 +19,10 @@
             <img src="./poze/logo.svg" alt="logo" width="100px" height="50px" />
         </a>
         <ul class="navbar-nav">
-            <li><a class="nav-item nav-link active" href="./index.html">Home</a></li>
+            <li><a class="nav-item nav-link" href="./index.html">Home</a></li>
             <li><a class="nav-item nav-link" href="./torturi.html">Torturi</a></li>
             <li><a class="nav-item nav-link" href="./prajituri.html">Prajituri</a></li>
+            <li><a class="nav-item nav-link active" href="./admin.html">Admin</a></li>
             <li><a class="nav-item nav-link" href="./contact.html">Contact</a></li>
             <li>
                 <a class="nav-item nav-link" href="./cart.html">
@@ -35,8 +34,40 @@
         </div>
     </nav>
     <!-- Container -->
-    <div class="container homePageBanner">
-        <button class="detailsBtn" id="home"><a href="/details?id=2&type=tort">Detalii</a></button>
+    <div class="container">
+        <form id="addNewProd">
+        <h3>Adaugare produs nou</h3>
+        
+            <div class="produsNou">
+                <label for="img">Introduce-ti calea catre imagine</label>
+                <input type="text" name="img" id="img"><br>
+
+                <label for="type">Sortiment</label>
+                <select name="type" id="type">
+                    <option value="tort">Alege sortimentul</option>
+                    <option value="tort">tort</option>
+                    <option value="prajitura">prajitura</option>
+                </select>
+
+                <label for="name">Denumire</label>
+                <input type="text" name="denumire" id="name"><br>
+
+                <label for="descriere">Descriere</label>
+                <input type="text" name="descriere" id="descriere"><br>
+
+                <label for="pret_prajitura" display="none">Pret</label>
+                <input type="text" name="pret_prajitura" id="pret_prajitura">
+
+                <label for="gramaj_tort" >Detalii gramaj</label>
+                <input type="text" name="gramaj_tort" id="gramaj_tort"><br>
+
+                <label for="pret_tort">Pret</label>
+                <input type="text" name="pret_tort" id="pret_tort">
+                <button type="submit" class="btn btn-primary cmdBtn newProd">Adauga</button>
+                <button class="btn btn-primary cmdBtn"><a onclick="this.href = './admin.html'">Renunta</a></button>
+            </div>
+
+       </form> 
     </div>
     <!-- Footer -->
     <footer>
@@ -50,8 +81,7 @@
             <small>copyright &copy;2021</small>
         </div>
     </footer>
-    <script src="src/index.js" type="module"></script>
+    <script src="./src/produsNou.js" type="module"></script>
     <script src="src/app.js" type="module"></script>
 </body>
-
 </html>

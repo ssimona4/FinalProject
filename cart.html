@@ -8,52 +8,70 @@
     <title>Cart</title>
     <link rel="stylesheet" href="./node_modules/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-light navbar-fixed-top" style="background-color:#f4dada;">
+    <nav class="navbar navbar-light fixed-top" style="background-color:#f4dada;">
         <a class="logo" href="./index.html">
             <img src="./poze/logo.svg" alt="logo" width="100px" height="50px" />
         </a>
         <ul class="navbar-nav">
-            <li><a class="nav-item nav-link active" href="./index.html">Home</a></li>
-            <li><a class="nav-item nav-link" href="#">Torturi</a></li>
-            <li><a class="nav-item nav-link" href="#">Prajituri</a></li>
-            <li><a class="nav-item nav-link" href="./admin.html">Admin</a></li>
-            <li><a class="nav-item nav-link" href="#">Blog</a></li>
-            <li><a class="nav-item nav-link" href="#">Contact</a></li>
+            <li><a class="nav-item nav-link" href="./index.html">Home</a></li>
+            <li><a class="nav-item nav-link" href="./torturi.html">Torturi</a></li>
+            <li><a class="nav-item nav-link" href="./prajituri.html">Prajituri</a></li>
+            <li><a class="nav-item nav-link" href="./contact.html">Contact</a></li>
             <li>
-                <a class="nav-item nav-link" href="./cart.html">
+                <a class="nav-item nav-link active" href="./cart.html">
                     <span id="nrOfProducts"></span>
                     Cosul tau
                 </a>
             </li>
+            <li><a class="nav-item nav-link" href="./login.html">Log In</a></li>
         </ul>
         </div>
     </nav>
     <!-- Container -->
-    <div class="container" id="cartContainer">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Nume</th>
-                    <th scope="col">Pret</th>
-                    <th scope="col">Cantitate</th>
-                    <th scope="col">Subtotal</th>
-                    <th scope="col"></th>
-                </tr>
-            </thead>
-            <tbody id="tableProductCart">
+    <div class="container">
+        <div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th scope="col">Nume</th>
+                        <th scope="col">Pret</th>
+                        <th scope="col">Cantitate</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody id="tableProductCart">
 
-            </tbody>
-        </table>
-        
+                </tbody>
+            </table>
+        </div>   
+        <div></div> 
+            <div class="totalCmd">
+                <p>Total comanda:<span id="total">0</span> Ron</p>
+                <button class="btn btn-primary plaseazaBtn">Plaseaza comanda</button>`
+            </div>
+        </div>
     </div>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h5>Macarons Boutique - Enjoy our sweet treats</h5>
+            <ul class="socials">
+                <li><a href="https://ro-ro.facebook.com/macaronsboutique" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/macarons.boutique/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.youtube.com/channel/UC3BRfMbeyMmC0vunDoKDAWQ" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+            <small>copyright &copy;2021</small>
+        </div>
+    </footer>
     <script src="./src/cart.js" type="module"></script>
     <script src="src/app.js" type="module"></script>
-
 </body>
-
 </html>

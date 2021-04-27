@@ -3,7 +3,8 @@ import { http } from "./http.js";
 // Get  All Products from Cart on DOM load
 document.addEventListener("DOMContentLoaded", () => {
   getProductsfromCart();
-
+  calcTotal();
+  
   document.querySelectorAll(".minusBtn").forEach((item) => {
     item.addEventListener("click", (event) => decreaseQtySubtotal(event));
   });
@@ -21,21 +22,21 @@ function getProductsfromCart() {
   let output = "";
   cart.forEach((element, index) => {
     output += ` <tr class="productRow">
-				<td><a href="/details?id=${element.id}&type=${element.type}">${element.denumire}</a></td>
-				<td>${element.pret}</td>
+              <td><img class="imgtable" src=${element.img}/></td>
+        				<td><a href="/details?id=${element.id}&type=${element.type}">${element.denumire}</a></td>
+				<td>${element.pret} Ron</td>
 				<td>  
                 <button data-id="${index}_${element.id}" type="button" class="btn minusBtn">-</button>                    
                 <input data-id="${index}_${element.id}" value="${element.cantitate}" type="number" class="quantity" name="quantity" min="1">
                 <button data-id="${index}_${element.id}" type="button" class="btn plusBtn">+</button> 
                 </td>
-				<td class="subTotalCell" data-id="${index}_${element.id}">${element.subTotal}</td>
-                <td><button data-id="${index}_${element.id}" type="button" class="btn removeBtn">Remove</button> </td>
+				<td class="subTotalCell" data-id="${index}_${element.id}">${element.subTotal} Ron</td>
+                <td><button data-id="${index}_${element.id}" type="button" class="btn removeBtn">Renunta</button> </td>
             </tr>
         `;
   });
-  output +=`<div class="totalCmd">Total comanda</div>
-            <button class="btn btn-primary cmdBtn">Cumpara</button>`
-
+  // output +=`<div class="totalCmd">Total comanda</div>
+  //           <button class="btn btn-primary cmdBtn">Plaseaza comanda</button>`
   document.getElementById("tableProductCart").innerHTML += output;
 }
 
@@ -65,8 +66,8 @@ function increaseQtySubTotal(event) {
   let subTotalUpdated = subTotalCurent + cart[indexRow].pret;
   subTotal.textContent = subTotalUpdated;
   cart[indexRow].subTotal = subTotalUpdated;
-
   window.localStorage.setItem("cart", JSON.stringify(cart));
+  calcTotal();
 }
 
 function decreaseQtySubtotal(event) {
@@ -81,6 +82,7 @@ function decreaseQtySubtotal(event) {
     `input.quantity[data-id="${target}"]`
   );
   const qtyCurenta = parseInt(qtyInput.value);
+  
   if (qtyCurenta > 1) {
     const qtyUpdated = qtyCurenta - 1;
     qtyInput.value = qtyUpdated;
@@ -94,7 +96,9 @@ function decreaseQtySubtotal(event) {
     let subTotalCurent = parseInt(subTotal.textContent);
     let subTotalUpdated = subTotalCurent - cart[indexRow].pret;
     subTotal.textContent = subTotalUpdated;
+    cart[indexRow].subTotal = subTotalUpdated;
     window.localStorage.setItem("cart", JSON.stringify(cart));
+    calcTotal();
   }
 }
 
@@ -107,4 +111,15 @@ function removeFromCart(event) {
     cart.splice(indexRow, 1);
   window.localStorage.setItem("cart", JSON.stringify(cart));
   window.location.reload();
+}
+
+function calcTotal() {
+  let total = 0;
+  const cart = JSON.parse(window.localStorage.getItem("cart"));
+  for (let i=0; i<= cart.length-1; i++) {
+    total += cart[i].subTotal;
+  }
+  window.localStorage.setItem("cart", JSON.stringify(cart));
+  document.getElementById("total").innerHTML = total;
+  
 }
